@@ -144,21 +144,19 @@ var Engine = (function(global) {
 
         renderEntities();
 
-        gameOverText(gameOver);
+        gameOverText(gameOver);  // GameOver 
 
 
     }
 
    function gameOverText (x) {
 
-      if (x === 'true') {
-        ctx.font = "bold 24px sans-serif";
+      if (x === 'true') {    // gameOver is true
+        ctx.font = "bold 24px sans-serif";  
         ctx.fillStyle = "white";
         ctx.fill();
-        ctx.fillText("Game Over! Try Again!", 151, 249 );
-        ctx.fillText("Press Ctrl+R to play again", 151,  269);
-        //reset();
-
+        ctx.fillText("Game Over! Try Again!", 151, 249 );    // Notify game is over 
+        ctx.fillText("Press Ctrl+R to play again", 140,  269);  // To play again, press ctrl+r
       }
 
 
